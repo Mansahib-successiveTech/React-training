@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function taskList({tasks}){
+function TaskList({tasks}){
 return(
 <div>
      {tasks.map((element,index)=>{
@@ -15,8 +15,8 @@ return(
 </div>
 )
 }
-taskList.prototype={
+TaskList.prototype={
     tasks:PropTypes.arrayOf(PropTypes.string)
 }
 
-export default taskList;
+export default TaskList;
