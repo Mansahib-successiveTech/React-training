@@ -15,8 +15,8 @@ return(
 </div>
 )
 }
-TaskList.prototype={
-    tasks:PropTypes.arrayOf(PropTypes.string)
+TaskList.PropTypes={
+    tasks:PropTypes.arrayOf(PropTypes.string).isRequired
 }
 
 export default TaskList;

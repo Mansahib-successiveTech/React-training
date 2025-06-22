@@ -1,6 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import { ThemeContext } from "@/context/ThemeContext";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
+import { ShopContext } from "@/context/ShopContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,14 +23,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <div>
-      <Link href={"/assignment-1"}>
-      assignment1
-      </Link>
-      </div>
-      
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <>
+          <Link href={"/"}>home</Link>
+          <br></br>
+          <Link href={"/assignment-1"}>assignment1</Link>
+          <br></br>
+          <Link href={"/assignment-2"}>assignment2</Link>
+        </>
+        <ThemeContext>
+          <ThemeSwitcher />
+          <ShopContext>
+          {children}
+          </ShopContext>
+        </ThemeContext>
       </body>
     </html>
   );

@@ -1,9 +1,8 @@
 import Link from "next/link";
 export default function RootLayout({ children }) {
     return (
-      <html lang="en">
-       <div>
-       <Link href="/assignment-1/ques1">
+      <div>
+         <Link href="/assignment-1/ques1">
           <button>ques1</button>
         </Link>
         <Link href="/assignment-1/ques2">
@@ -22,12 +21,8 @@ export default function RootLayout({ children }) {
           <button>ques6</button>
         </Link>
         
-       </div>
-        
-        <body >
-          {children}
-        </body>
-      </html>
+        {children}
+      </div>
     );
   }
   
