@@ -7,8 +7,8 @@ const ThemeSwitcher = () => {
     <>
       <div>
         <header>
-          <button onClick={Toggler}>theme switch</button>
-          <p>theme is:{theme}</p>
+          <button onClick={Toggler}>{theme}</button>
+          <p></p>
         </header>
       </div>
     </>
