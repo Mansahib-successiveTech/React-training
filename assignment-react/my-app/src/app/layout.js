@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ThemeContext } from "@/context/ThemeContext";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import { ShopContext } from "@/context/ShopContext";
+import { LanguageSwitcherProvider } from "@/context/LanguageContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,12 +32,18 @@ export default function RootLayout({ children }) {
           <br></br>
           <Link href={"/assignment-2"}>assignment2</Link>
         </>
+        
         <ThemeContext>
+         
           <ThemeSwitcher />
           <ShopContext>
-          {children}
+          <LanguageSwitcherProvider>
+              {children}
+              </LanguageSwitcherProvider>
           </ShopContext>
+          
         </ThemeContext>
+        
       </body>
     </html>
   );

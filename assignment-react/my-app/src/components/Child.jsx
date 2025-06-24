@@ -1,6 +1,8 @@
 "use client"
 
-export const Child=({Increment,count,setCount})=>{
+import { memo } from "react";
+
+export const Child=memo(({Increment,count,setCount})=>{
     const reset = () => {
         setCount(0);
       };
@@ -13,6 +15,6 @@ export const Child=({Increment,count,setCount})=>{
         </>
     )
 
-}
+})
 
 Child.prototype

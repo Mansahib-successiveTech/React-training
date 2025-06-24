@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         <Link href={"/assignment-2/ques9"}>
         <button>ques9</button>
         </Link>
-        <Link href={"/assignment-2/que10"}>
+        <Link href={"/assignment-2/ques10"}>
         <button>ques10</button>
         </Link>
         <Link href={"/assignment-2/ques11"}>
