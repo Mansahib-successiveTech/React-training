@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
             <Link href={"/"} style={linkStyle}>Home</Link>
             <Link href={"/assignment-1"} style={linkStyle}>Assignment 1</Link>
             <Link href={"/assignment-2"} style={linkStyle}>Assignment 2</Link>
+            <Link href={"/assignment-3"} style={linkStyle}>Assignment 3</Link>
           </nav>
 
           {/* Main content */}

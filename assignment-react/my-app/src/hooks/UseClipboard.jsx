@@ -1,27 +1,24 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 
 const UseClipboard = () => {
   const [copied, setCopied] = useState(false);
 
-  const copy = (text) => {
+  const copy = useCallback(async (text) => {
     if (!text) return;
 
-    const textarea = document.createElement('textarea');
-    textarea.value = text;
-    document.body.appendChild(textarea);
-    // selects the text withing the textarea
-    textarea.select();
-    // copies all text inside it 
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
-
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // reset status
-  };
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error("Clipboard copy failed:", err);
+      setCopied(false);
+    }
+  }, []);
 
   return { copied, copy };
-}
+};
 
-export default UseClipboard; 
+export default UseClipboard;
