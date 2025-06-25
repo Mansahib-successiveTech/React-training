@@ -1,10 +1,8 @@
-
-
-export default function Home() {
-    return (
-      <div>
-        <p> this is assignment 3</p>
-     </div>
-    );
-  }
-  
+ const Home=()=>{
+  return<>
+  <p>
+    this is assignment 3
+  </p>
+  </>
+}
+export default Home

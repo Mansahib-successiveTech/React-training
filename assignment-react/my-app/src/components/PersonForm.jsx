@@ -20,9 +20,11 @@ export default function PersonForm() {
         <input type="number" onChange={(e) => setAge(e.target.value)} />
         <br></br>
         <div>
-          {firstName}
-          {lastName}
-          {age}
+          <p> {firstName}</p>
+
+          <p>{lastName}</p>
+
+          <p>{age}</p>
         </div>
       </div>
     </>
