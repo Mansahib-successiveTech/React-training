@@ -15,8 +15,8 @@ const Weather = (props) => {
     </div>
   );
 };
-Weather.prototype={
-    temperature:PropTypes.number.isRequired
-}
+Weather.PropTypes = {
+  temperature: PropTypes.number.isRequired,
+};
 
 export default Weather;

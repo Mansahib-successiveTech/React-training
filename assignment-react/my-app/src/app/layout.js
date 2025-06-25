@@ -1,6 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import { ThemeContext } from "@/context/ThemeContext";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
+import { ShopContext } from "@/context/ShopContext";
+import { LanguageSwitcherProvider } from "@/context/LanguageContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,15 +24,50 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <div>
-      <Link href={"/assignment-1"}>
-      assignment1
-      </Link>
-      </div>
-      
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <div style={{ display: "flex" }}>
+          {/* Sidebar */}
+          <nav style={sidebarStyle}>
+            <Link href={"/"} style={linkStyle}>Home</Link>
+            <Link href={"/assignment-1"} style={linkStyle}>Assignment 1</Link>
+            <Link href={"/assignment-2"} style={linkStyle}>Assignment 2</Link>
+            <Link href={"/assignment-3"} style={linkStyle}>Assignment 3</Link>
+          </nav>
+
+          {/* Main content */}
+          <main style={{ flex: 1, padding: "20px" }}>
+            <ThemeContext>
+              <ThemeSwitcher />
+              <ShopContext>
+                <LanguageSwitcherProvider>
+                  {children}
+                </LanguageSwitcherProvider>
+              </ShopContext>
+            </ThemeContext>
+          </main>
+        </div>
       </body>
     </html>
   );
 }
+
+const sidebarStyle = {
+  width: "200px",
+  height: "100vh",
+  backgroundColor: "#f0f0f0",
+  padding: "20px",
+  boxSizing: "border-box",
+  display: "flex",
+  flexDirection: "column",
+  gap: "10px",
+};
+
+const linkStyle = {
+  textDecoration: "none",
+  color: "#333",
+  fontWeight: "500",
+  padding: "8px",
+  borderRadius: "4px",
+  backgroundColor: "#e0e0e0",
+  transition: "background 0.3s",
+};

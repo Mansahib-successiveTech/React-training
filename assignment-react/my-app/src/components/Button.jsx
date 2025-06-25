@@ -6,7 +6,7 @@ const Button = (props) => {
     <div>
       <button
         style={{
-          color: colorBtn
+          color: colorBtn,
         }}
       >
         {text}
@@ -14,8 +14,8 @@ const Button = (props) => {
     </div>
   );
 };
-Button.PropTypes={
-    color:PropTypes.string.isRequired,
-    text:PropTypes.string.isRequired
-}
+Button.PropTypes = {
+  color: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};
 export default Button;
