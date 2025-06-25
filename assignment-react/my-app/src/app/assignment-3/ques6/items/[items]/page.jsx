@@ -1,21 +1,20 @@
+'use client';
 
-"use client"
+import { useParams } from 'next/navigation';
 import { getProductById } from '@/components/Items';
-import { notFound } from 'next/navigation';
-
-
-export default function ProductDetail({ params }) {
-  const product = getProductById(params.items); // use `params.items` not `params.id`
+export default function ProductDetail() {
+  const params = useParams();
+  const productId = params.items;
+  const product = getProductById(productId);
 
   if (!product) {
-    return <p>oops not founds</p>
+    return <p>Product not found.</p>;
   }
 
   return (
     <div>
       <h1>{product.name}</h1>
       <p>{product.description}</p>
-      
     </div>
   );
 }
