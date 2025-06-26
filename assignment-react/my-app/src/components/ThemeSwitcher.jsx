@@ -1,8 +1,12 @@
 "use client";
 import { useTheme } from "@/context/ThemeContext";
+import { useEffect } from "react";
 const ThemeSwitcher = () => {
   const { theme, Toggler } = useTheme();
-  document.body.className = theme;
+  useEffect(()=>{
+    document.body.className = theme;
+  },[theme])
+ 
   return (
     <>
       <div>

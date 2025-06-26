@@ -12,6 +12,7 @@ const Login = () => {
     e.preventDefault();
     login(name, password);
     setPassword(0);
+    
   };
 
   return (
