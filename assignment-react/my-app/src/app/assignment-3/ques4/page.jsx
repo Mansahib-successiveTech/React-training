@@ -1,3 +1,4 @@
+import Login from "@/components/Login";
 
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
         to the login page. Display a message on the Home page welcoming the
         authenticated user.
       </p>
-      
+      <Login />
     </div>
   );
 }
