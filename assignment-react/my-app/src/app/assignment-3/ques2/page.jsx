@@ -1,3 +1,4 @@
+import ThemeSwitcher from "@/components/ThemeSwitcher";
 
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
         light/dark using a button in the child component. Display the theme
         preference in the UI and adjust the component's styling accordingly.
       </p>
-      
+      <ThemeSwitcher />
     </div>
   );
 }

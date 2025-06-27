@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div>
@@ -9,6 +11,12 @@ export default function Home() {
         navigation links to switch between the sub-pages within the Dashboard
         section. Customize the content displayed on each sub-page.
       </p>
+      <Link href={"/dashboard"}>
+      dashboard</Link><br></br>
+      <Link href={"/setting"}>
+      setting</Link><br></br>
+      <Link href={"/profile"}>
+      profile</Link><br></br>
     </div>
   );
 }

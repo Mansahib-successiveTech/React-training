@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 export default function Home() {
@@ -8,6 +9,10 @@ export default function Home() {
         links to switch between the Home and About pages. Display appropriate
         content on each page. Add a "404 Not Found" page for any invalid routes.
       </p>
+      <Link href={'/about'}>about
+      </Link> <br></br>
+      <Link href={'/'}>back to home
+      </Link> 
     </div>
   );
 }
