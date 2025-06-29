@@ -4,7 +4,7 @@ export default function RootLayout({ children }) {
   return (
     <div>
       
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", padding: "10px" }}>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", padding: "10px"  }}>
         <Link href="/assignment-1/ques1">
           <button style={buttonStyle}>ques1</button>
         </Link>

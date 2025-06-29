@@ -30,6 +30,30 @@ export default function RootLayout({ children }) {
         <Link href={"/assignment-4/ques6"}>
           <button style={buttonStyle}>ques6</button>
         </Link>
+         <Link href={"/assignment-4/ques7"}>
+          <button style={buttonStyle}>ques7</button>
+        </Link>
+         <Link href={"/assignment-4/ques8"}>
+          <button style={buttonStyle}>ques8</button>
+        </Link>
+          <Link href={"/assignment-4/ques9"}>
+          <button style={buttonStyle}>ques9</button>
+        </Link>
+          <Link href={"/assignment-4/ques10"}>
+          <button style={buttonStyle}>ques10</button>
+        </Link>
+          <Link href={"/assignment-4/ques11"}>
+          <button style={buttonStyle}>ques11</button>
+        </Link>
+          <Link href={"/assignment-4/ques12"}>
+          <button style={buttonStyle}>ques12</button>
+        </Link>
+        <Link href={"/assignment-4/ques13"}>
+          <button style={buttonStyle}>ques13</button>
+        </Link>
+        <Link href={"/assignment-4/ques14"}>
+          <button style={buttonStyle}>ques14</button>
+        </Link>
       </div>
 
       <hr style={{ margin: "20px 0" }} />

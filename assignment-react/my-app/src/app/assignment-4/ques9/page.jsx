@@ -1,16 +1,14 @@
-import StickyHeadTable from "@/components/DataTableMui";
-import EnhancedTable from "@/components/DataTableMui";
-import { FormMui, ValidationTextFields } from "@/components/FormMUI";
-import ModalMui from "@/components/ModalMui";
-import ResponsiveDrawer from "@/components/Sidebar";
-
 
 const Home = () => {
   return (
     <>
-    <FormMui />
-    <ModalMui />
-    
+      <p>
+        9.Implement a responsive sidebar navigation using Material-UI's Drawer
+        component and include it as part of the layout.js so that the sidebar
+        appears consistently across all pages. The sidebar should include links
+        that allow users to navigate between different sections of your web app.
+      </p>
+      
     </>
   );
 };

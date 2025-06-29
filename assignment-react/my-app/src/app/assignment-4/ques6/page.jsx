@@ -1,6 +1,5 @@
 import ControlledTodo from "@/components/ControlledTodo";
-import SearchFilter from "@/components/SearchFilter";
-import TemperatureConverter from "@/components/TempratureConvert";
+
 
 const Home = () => {
   return (
@@ -11,8 +10,7 @@ const Home = () => {
         the input and update the list of tasks.
       </p>
 <ControlledTodo />
-<SearchFilter />
-<TemperatureConverter />
+
     </>
   );
 };
