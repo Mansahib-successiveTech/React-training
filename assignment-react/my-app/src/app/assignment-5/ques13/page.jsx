@@ -1,5 +1,13 @@
-import DumbParent from "@/components/DumbParent";
+"use client"
+import DumbBasicModal from "@/components/DumbModal";
+
 const Home = () => {
+   const text = "reusable component ";
+    const backGroundStyle = "aqua";
+    const heading="Dumb modal"
+    const onClickhandler = () => {
+      alert("hi");
+    }
   return (
     <>
       <p>
@@ -8,7 +16,8 @@ const Home = () => {
         toggle the modal’s visibility. Demonstrate how to use this component to
         display different types of content within a Next.js application.
       </p>
-      <DumbParent />
+       <DumbBasicModal  backGroundStyle={backGroundStyle} text={text} heading={heading} />
+
     </>
   );
 };

@@ -1,5 +1,12 @@
-import DumbParent from "@/components/DumbParent";
+"use client"
+import ReusableButton from "@/components/ReusableButton";
 const Home = () => {
+   const text = "reusable component ";
+    const backGroundStyle = "aqua";
+    const heading="Dumb modal"
+    const onClickhandler = () => {
+      alert("hi");
+    };
   return (
     <>
       <p>
@@ -8,7 +15,11 @@ const Home = () => {
         click handlers. Demonstrate how to use this Button component within a
         sample Next.js application.
       </p>
-      <DumbParent />
+      <ReusableButton
+            text={text}
+            backGroundStyle={backGroundStyle}
+            onClickhandler={onClickhandler}
+          />
 
     </>
   );

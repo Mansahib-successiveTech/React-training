@@ -1,11 +1,13 @@
 "use client";
 
+import { useAuth } from "@/context/AuthContext";
 import { redirect } from "next/navigation";
 
 const withAuth = (WrappedComponent) => (props) => {
-  let islogin = true;
+  const {loggedIn}=useAuth();
+  
 
-  if (!islogin) {
+  if (!loggedIn) {
     redirect("/login");
   }
 

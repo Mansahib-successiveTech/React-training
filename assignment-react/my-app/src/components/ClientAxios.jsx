@@ -3,6 +3,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { CircularProgress } from "@mui/material";
+import { getDogs } from "@/app/assignment-5/actions";
 
 export const ClientAxios = ({ result }) => {
   const [data, setData] = useState(null);
@@ -11,8 +12,8 @@ export const ClientAxios = ({ result }) => {
   const retry = async () => {
     setLoading(true);
     try {
-      const res = await axios.get("https://dogapi.dog/api/v2/facts?limit=5");
-      setData(res.data.data);
+      const res = await getDogs();
+      setData(res);
     } catch (err) {
       console.error("error", err);
     } finally {

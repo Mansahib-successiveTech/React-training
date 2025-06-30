@@ -1,4 +1,6 @@
-import SimpleFetch from "@/components/SimpleFetch";
+
+import Page from "@/components/ClientFetch";
+
 const Home = () => {
   return (
     <>
@@ -10,7 +12,8 @@ const Home = () => {
         page. Additionally, provide a retry button so users can attempt to fetch
         the data again without reloading the entire page.
       </p>
-      <SimpleFetch />
+      <Page />
+      
     </>
   );
 };
