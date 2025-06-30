@@ -5,16 +5,7 @@ import { ThemeContext } from "@/context/ThemeContext";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import { ShopContext } from "@/context/ShopContext";
 import { LanguageSwitcherProvider } from "@/context/LanguageContext";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { AuthContextProvider } from "@/context/AuthContext";
 
 export const metadata = {
   title: "Create Next App",
@@ -24,14 +15,46 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
         <div style={{ display: "flex" }}>
           {/* Sidebar */}
           <nav style={sidebarStyle}>
-            <Link href={"/"} style={linkStyle}>Home</Link>
-            <Link href={"/assignment-1"} style={linkStyle}>Assignment 1</Link>
-            <Link href={"/assignment-2"} style={linkStyle}>Assignment 2</Link>
-            <Link href={"/assignment-3"} style={linkStyle}>Assignment 3</Link>
+            <Link href={"/"} style={linkStyle}>
+              Home
+            </Link>
+            <Link href={"/assignment-1"} style={linkStyle}>
+              Assignment 1
+            </Link>
+            <Link href={"/assignment-2"} style={linkStyle}>
+              Assignment 2
+            </Link>
+            <Link href={"/assignment-3"} style={linkStyle}>
+              Assignment 3
+            </Link>
+            <Link href={"/"} style={linkStyle}>
+              Assignment 4
+            </Link>
+            <Link href={"/"} style={linkStyle}>
+              Assignment 5
+            </Link>
+            <Link href={"/"} style={linkStyle}>
+              Assignment 6
+            </Link>
+            <p style={{ marginTop: "40px" }}></p>
+            <hr></hr>
+
+            <Link href={"/about"} style={linkStyle}>
+              about
+            </Link>
+            <Link href={"/dashboard"} style={linkStyle}>
+              dashboard
+            </Link>
+            <Link href={"/profile"} style={linkStyle}>
+              profile
+            </Link>
+            <Link href={"/settings"} style={linkStyle}>
+              setting
+            </Link>
           </nav>
 
           {/* Main content */}
@@ -40,7 +63,7 @@ export default function RootLayout({ children }) {
               <ThemeSwitcher />
               <ShopContext>
                 <LanguageSwitcherProvider>
-                  {children}
+                  <AuthContextProvider>{children}</AuthContextProvider>
                 </LanguageSwitcherProvider>
               </ShopContext>
             </ThemeContext>
