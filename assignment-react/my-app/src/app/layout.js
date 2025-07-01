@@ -15,7 +15,7 @@ const links = [
   { label: 'Assignment 3', href: '/assignment-3' },
   { label: 'Assignment 4', href: '/assignment-4' },
   { label: 'Assignment 5', href: '/assignment-5' },
-  { label: 'Assignment 6', href: '/' },
+  { label: 'Assignment 6', href: '/assignment6' },
 ];
 
 const otherLinks = [

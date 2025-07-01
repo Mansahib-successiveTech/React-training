@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import axios from "axios";
 import { CircularProgress } from "@mui/material";
 import { getDogs } from "@/app/assignment-5/actions";
 
