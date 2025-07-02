@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.1.2",
     "@mui/x-data-grid": "^8.6.0",
+    "axios": "^1.10.0",
     "formik": "^2.4.6",
     "next": "15.3.3",
     "prop-types": "15.8.1",
