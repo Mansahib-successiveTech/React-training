@@ -35,7 +35,8 @@ const SlideShow = () => {
           }
         });
       }, 3000);
-    }
+    }else 
+    setIndex(index);
 
     return () => clearInterval(intervalId);
   }, [play]);
