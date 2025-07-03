@@ -21,7 +21,7 @@ const countVotes = (state, action) => {
   }
 };
 
-export const Votes=()=>{
+ const Votes=()=>{
    const [state,dispatch]=useReducer(countVotes,initialState); 
 
     return(
@@ -43,3 +43,4 @@ export const Votes=()=>{
         </>
     )
 }
+export default Votes;

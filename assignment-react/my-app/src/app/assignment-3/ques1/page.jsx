@@ -1,5 +1,4 @@
-import ChildAuth from "@/components/ChildAuth";
-
+import { ChildAuth } from "@/components";
 
 export default function Home() {
     return (

@@ -1,4 +1,4 @@
-import { ToDoListCallback } from "@/components/ToDolistCallback"
+import { ToDoListCallback } from "@/components"
 
 const { ToDoList } = require("@/components/ToDoList")
  const ShowList=()=>{

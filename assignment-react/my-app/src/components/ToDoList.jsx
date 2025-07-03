@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export const ToDoList = () => {
+ const ToDoList = () => {
   const [list, setList] = useState([]);
   const [task, setTask] = useState("");
   const [count, setCount] = useState(0);
@@ -63,3 +63,4 @@ export const ToDoList = () => {
     </>
   );
 };
+export default ToDoList

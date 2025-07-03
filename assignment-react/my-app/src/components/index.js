@@ -2,7 +2,6 @@
 
 export { default as Button } from './Button';
 export { default as Cart } from './Cart';
-export { default as Child } from './Child';
 export { default as ChildAuth } from './ChildAuth';
 export { default as ClientAxios } from './ClientAxios';
 export { default as ClientFetch } from './ClientFetch';
@@ -24,7 +23,6 @@ export { default as FormMui } from './FormMUI';
 export { default as FormWithValidations } from './FormWithValidations';
 export { default as HocFetch } from './HocFetch';
 export { default as Items } from './Items';
-export { default as Index } from './index';
 export { default as LanguageSwitcher } from './LanguageSwitcher';
 export { default as Logfiles } from './Logfiles';
 

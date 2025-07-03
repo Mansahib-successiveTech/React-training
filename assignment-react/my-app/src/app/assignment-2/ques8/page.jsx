@@ -1,4 +1,4 @@
-import SlideShow from "@/components/SlideShow"
+import { SlideShow } from "@/components"
 
 const ShowImages=()=>{
 return(

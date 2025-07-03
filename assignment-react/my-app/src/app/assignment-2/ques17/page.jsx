@@ -1,4 +1,4 @@
-import CopyClipboard from "@/components/CopyClipboard"
+import { CopyClipboard } from "@/components"
 
 const Clipboard=()=>{
 return (

@@ -1,4 +1,5 @@
-import SimpleFetch from "@/components/SimpleFetch";
+import { SimpleFetch } from "@/components";
+
 const Home = () => {
   return (
     <>

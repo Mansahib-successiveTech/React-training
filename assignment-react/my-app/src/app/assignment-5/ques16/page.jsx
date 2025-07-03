@@ -1,5 +1,4 @@
-import HocFetch from "@/components/HocFetch";
-import ProtectedPage from "@/components/ProtectedPage";
+import { HocFetch } from "@/components";
 
 const Home = () => {
   return (

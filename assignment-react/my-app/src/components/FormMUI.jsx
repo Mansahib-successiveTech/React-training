@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
-export const FormMui = () => {
+ const FormMui = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [age, setAge] = useState("");
@@ -63,3 +63,5 @@ export const FormMui = () => {
     </>
   );
 };
+
+export default FormMui

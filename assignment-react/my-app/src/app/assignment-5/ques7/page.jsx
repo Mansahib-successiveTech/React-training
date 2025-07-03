@@ -1,5 +1,5 @@
+import { SimplePost } from "@/components";
 
-import SimplePost from "@/components/SimplePost";
 const Home = () => {
   return (
     <>

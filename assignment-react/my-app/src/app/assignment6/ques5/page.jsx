@@ -1,7 +1,7 @@
 "use client";
 
 import MuiBasicModal from "@/components/TestModal";
-import UserProfile from "@/components/UserProfile";
+
 
 export default function Home() {
   return (

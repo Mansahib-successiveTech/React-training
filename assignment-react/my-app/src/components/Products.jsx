@@ -1,7 +1,6 @@
 "use client"
 import { useShop } from "@/context/ShopContext";
-
-export const Products = () => {
+const Products = () => {
   const products = [
     { id: 1, name: "T-shirt", price: 100 },
     { id: 2, name: "Watch", price: 200 },
@@ -27,3 +26,4 @@ export const Products = () => {
     </>
   );
 };
+export default Products

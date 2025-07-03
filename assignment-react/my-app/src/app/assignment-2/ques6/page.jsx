@@ -1,4 +1,4 @@
-import Clock from "@/components/Clock";
+import { Clock } from "@/components";
 
 const GetTime=()=>{
 return(

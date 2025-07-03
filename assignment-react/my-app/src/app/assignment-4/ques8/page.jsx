@@ -1,5 +1,5 @@
-
 import TemperatureConverter from "@/components/TempratureConvert";
+
 
 const Home = () => {
   return (

@@ -1,4 +1,4 @@
-import CounterWithStep from "@/components/CounterWithStep"
+import { CounterWithStep } from "@/components"
 
 const GetCounterWithStep=()=>{
 return(

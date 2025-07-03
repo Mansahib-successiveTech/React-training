@@ -1,4 +1,4 @@
-import EmployeeSalary from "@/components/EmployeeSalary"
+import { EmployeeSalary } from "@/components";
 
  const Employee=()=>{
 return<>

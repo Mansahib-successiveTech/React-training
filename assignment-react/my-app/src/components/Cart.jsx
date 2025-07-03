@@ -2,7 +2,7 @@
 
 import { useShop } from "@/context/ShopContext";
 
-export const Cart = () => {
+const Cart = () => {
   const { cart, removeFromCart, total } = useShop();
   return (
     <>
@@ -26,3 +26,4 @@ export const Cart = () => {
     </>
   );
 };
+export default Cart
