@@ -1,4 +1,4 @@
-import { FormMui } from "@/components/FormMUI";
+import { FormMui } from "@/components";
 
 const Home = () => {
   return (

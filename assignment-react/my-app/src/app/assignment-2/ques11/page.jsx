@@ -1,5 +1,4 @@
-import { Cart } from "@/components/Cart";
-import { Products } from "@/components/Products";
+import { Cart, Products } from "@/components";
 
 const Shopping=()=>{
 return(

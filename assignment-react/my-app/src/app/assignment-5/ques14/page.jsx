@@ -1,4 +1,4 @@
-import ProtectedPage from "@/components/ProtectedPage";
+import { ProtectedPage } from "@/components";
 
 const Home = () => {
   return (

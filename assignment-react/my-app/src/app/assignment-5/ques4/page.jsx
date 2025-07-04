@@ -1,4 +1,4 @@
-import DataTable from "@/components/DatagridFetch";
+import { DatagridFetch } from "@/components";
 
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
         and provide controls to navigate between pages. Use the native fetch and
         handle data fetching efficiently within the App Router
       </p>
-      <DataTable />
+      <DatagridFetch />
     </>
   );
 };

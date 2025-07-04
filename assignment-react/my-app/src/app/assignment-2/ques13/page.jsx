@@ -1,4 +1,5 @@
-import { Parent } from "@/components/Parent";
+import { Parent } from "@/components";
+
 const Parentchild=()=>{
 return(
     <>

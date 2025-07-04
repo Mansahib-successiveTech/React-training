@@ -1,5 +1,4 @@
-import ManageLocalStorage from "@/components/ManageLocalStorage"
-
+import { ManageLocalStorage } from "@/components"
 
 const ShowLocalStorage=()=>{
 return(

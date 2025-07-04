@@ -1,4 +1,4 @@
-import ControlledUnhide from "@/components/ControlledUnhide";
+import { ControlledUnhide } from "@/components";
 
 const Home = () => {
   return (

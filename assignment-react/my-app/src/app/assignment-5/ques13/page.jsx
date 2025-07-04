@@ -1,4 +1,5 @@
 "use client"
+
 import DumbBasicModal from "@/components/DumbModal";
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
         toggle the modal’s visibility. Demonstrate how to use this component to
         display different types of content within a Next.js application.
       </p>
-       <DumbBasicModal  backGroundStyle={backGroundStyle} text={text} heading={heading} />
+       <DumbBasicModal backGroundStyle={backGroundStyle} text={text} heading={heading} />
 
     </>
   );

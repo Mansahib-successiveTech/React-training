@@ -1,11 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import axios from "axios";
 import { CircularProgress } from "@mui/material";
 import { getDogs } from "@/app/assignment-5/actions";
-
-export const ClientAxios = ({ result }) => {
+const ClientAxios = ({ result }) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -50,3 +48,5 @@ export const ClientAxios = ({ result }) => {
 );
 
 };
+
+export default ClientAxios;

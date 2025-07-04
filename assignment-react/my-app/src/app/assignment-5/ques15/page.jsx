@@ -1,5 +1,4 @@
-import Logfiles from "@/components/Logfiles";
-import ProtectedPage from "@/components/ProtectedPage";
+import { Logfiles } from "@/components";
 
 const Home = () => {
   return (

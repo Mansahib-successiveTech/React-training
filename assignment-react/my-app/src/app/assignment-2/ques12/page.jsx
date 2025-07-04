@@ -1,4 +1,4 @@
-import { Votes } from "@/components/Votes";
+import { Votes } from "@/components";
 
 const votings=()=>{
 return(
@@ -11,7 +11,7 @@ Use the useReducer hook to access the votes state and dispatch actions.
 Allow users to vote for their preferred options.
 Display the current vote count for each option.
     </p>
-    <Votes />
+    <Votes/>
     </>
 )
 }

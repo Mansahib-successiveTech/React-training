@@ -1,4 +1,4 @@
-import PersonForm from "@/components/PersonForm"
+import { PersonForm } from "@/components"
 
 const GetPersonForm=()=>{
 return(

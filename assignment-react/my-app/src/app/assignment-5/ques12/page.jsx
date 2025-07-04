@@ -1,5 +1,7 @@
 "use client"
-import ReusableButton from "@/components/ReusableButton";
+
+import { ReusableButton } from "@/components";
+
 const Home = () => {
    const text = "reusable component ";
     const backGroundStyle = "aqua";

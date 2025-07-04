@@ -1,4 +1,4 @@
-import SearchFilter from "@/components/SearchFilter";
+import { SearchFilter } from "@/components";
 
 const Home = () => {
   return (

@@ -1,4 +1,4 @@
-import RandomNumberGenerator from "@/components/RandomNumberGenerator"
+import { RandomNumberGenerator } from "@/components"
 
 const GenerateRandom=()=>{
 return(

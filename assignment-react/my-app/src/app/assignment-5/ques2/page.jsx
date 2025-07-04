@@ -1,5 +1,5 @@
-
 import Page from "@/components/ClientFetch";
+
 
 const Home = () => {
   return (

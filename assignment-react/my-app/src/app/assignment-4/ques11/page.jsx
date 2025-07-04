@@ -1,4 +1,4 @@
-import ModalMui from "@/components/ModalMui";
+import { ModalMui } from "@/components";
 
 const Home = () => {
   return (

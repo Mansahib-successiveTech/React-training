@@ -15,11 +15,11 @@ const UserCard = (props) => {
     >
       <h2>name:{name}</h2>
       <h3>email:{email}</h3>
-      <img src={avatar} width={100} height={100}></img>
+      <img src={avatar} width={100} height={100} alt="image"></img>
     </div>
   );
 };
-UserCard.PropTypes = {
+UserCard.propTypes = {
   name: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
   img:PropTypes.string.isRequired

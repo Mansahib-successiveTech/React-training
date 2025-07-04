@@ -2,7 +2,7 @@
 
 import { useState,useCallback } from "react";
 import { Child } from "./Child";
-export const Parent = () => {
+const Parent = () => {
   const [count, setCount] = useState(0);
 
   const Increment = useCallback(() => {
@@ -19,3 +19,4 @@ export const Parent = () => {
     </>
   );
 };
+export default Parent

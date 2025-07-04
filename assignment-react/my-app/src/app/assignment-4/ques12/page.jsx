@@ -1,6 +1,7 @@
 "use client";
+import { DataTableMui } from "@/components";
 import React from "react";
-import DataTableMui from "@/components/DataTableMui"; // global dumb table
+
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },

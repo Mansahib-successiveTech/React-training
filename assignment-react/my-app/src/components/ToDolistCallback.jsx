@@ -1,8 +1,7 @@
 "use client";
 
 import { useCallback, useState } from "react";
-
-export const ToDoListCallback = () => {
+ const ToDoListCallback = () => {
     console.log("componnent rendered");
   const [list, setList] = useState([]);
   const [task, setTask] = useState("");
@@ -64,3 +63,5 @@ export const ToDoListCallback = () => {
     </>
   );
 };
+
+export default ToDoListCallback
