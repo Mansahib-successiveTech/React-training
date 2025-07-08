@@ -5,12 +5,12 @@ import { useState } from "react";
 
 const ChildAuth =(() => {
   const { loggedIn, login } = useAuth();
-  const [name, setName] = useState("");
-  const [password, setPassword] = useState(0);
+  const [name, setName] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
   const onClickHandler=()=>{
     login(name, password)
-   // setName("")
-    setPassword(0);
+
+    setPassword("");
   }
   return (
     <>

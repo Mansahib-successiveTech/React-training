@@ -1,8 +1,8 @@
 "use client";
-import Login from "@/components/Login";
-import Setting from "@/components/Settings";
-import { useAuth } from "@/context/AuthContext";
+
 import { redirect } from "next/navigation";
+import { useAuth } from "../../context/AuthContext";
+import Setting from "../../components/Settings";
 
 
 const Home = () => {

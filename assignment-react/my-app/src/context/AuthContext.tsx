@@ -1,13 +1,18 @@
 "use client"
 
-import { createContext, useCallback, useContext, useState } from "react";
-const MyAuthContext=createContext();
+interface authInterface{
+   loggedIn:boolean;
+   login: (name: string, pass: string) => void
+}
 
-export const AuthContextProvider=({children})=>{
+import { createContext, ReactNode, useContext, useState } from "react";
+const MyAuthContext=createContext<authInterface| undefined>(undefined);
+
+export const AuthContextProvider=({children}:{children:ReactNode})=>{
 const username="mansahib";
 const password=123;
 const [loggedIn,setLoggedin]=useState(false);
-const login=((name,pass)=>{
+const login=((name:string,pass:string)=>{
     if(name=== username && parseInt(pass)===password){
         setLoggedin(true);
     }
@@ -22,5 +27,13 @@ return(
 
 }
 
-export const useAuth=()=>useContext(MyAuthContext);
+export const useAuth=():authInterface=>
+    {
+        const context=useContext(MyAuthContext);
+        if(!context){
+            throw new Error("error")
+        }    
+        else
+        return context
+    }
 

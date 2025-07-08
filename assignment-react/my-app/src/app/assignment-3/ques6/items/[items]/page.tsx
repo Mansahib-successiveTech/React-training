@@ -5,7 +5,7 @@ import { getProductById } from '../../../../../components/Items';
 
 export default function ProductDetail() {
   const params = useParams();
-  const productId = params.items;
+  const productId = Number(params.items);
   const product = getProductById(productId);
 
   if (!product) {

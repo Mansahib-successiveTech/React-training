@@ -1,7 +1,8 @@
 "use client";
-import Profile from "@/components/Profile";
-import { useAuth } from "@/context/AuthContext";
+
 import { redirect } from "next/navigation";
+import { useAuth } from "../../context/AuthContext";
+import { Profile } from "../../components";
 
 
 const Home = () => {
