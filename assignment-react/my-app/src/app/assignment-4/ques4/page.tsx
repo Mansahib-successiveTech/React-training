@@ -1,4 +1,4 @@
-import { ControlledPassword } from "@/components";
+import { ControlledPassword } from "../../../components";
 
 const Home = () => {
   return (

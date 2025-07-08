@@ -14,7 +14,7 @@ const About = () => {
     fontSize: "16px",
   };
 
-  const containerStyle = {
+  const containerStyle:React.CSSProperties = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",

@@ -1,12 +1,12 @@
 "use client"
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 
 function DropdownMenu() {
   const [option, setOption] = useState('');
 
   const array = ['task1', 'task2', 'task3', 'task3'];
 
-  const handleChange = (event) => {
+  const handleChange = (event:ChangeEvent<HTMLSelectElement>) => {
     setOption(event.target.value);
   };
 

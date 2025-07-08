@@ -3,8 +3,8 @@
 import { useState } from "react";
 
 const ControlledTodo = () => {
-  const [todo, setTodo] = useState("");
-  const [todoList, setTodoList] = useState([]);
+  const [todo, setTodo] = useState<string>("");
+  const [todoList, setTodoList] = useState<string[]>([]);
 
   const addTodo = () => {
     setTodoList((prev) => [...prev, todo]);
@@ -19,11 +19,9 @@ const ControlledTodo = () => {
       />
       <button onClick={addTodo}>add</button>
 
-      <>
-        {todoList.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </>
+      {todoList.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
     </>
   );
 };

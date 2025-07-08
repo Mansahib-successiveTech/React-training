@@ -1,20 +1,20 @@
 "use client";
-import React, { useState } from "react";
+import React, { FormEvent, useState } from "react";
 
 const ControlledForm = () => {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [technology, setTechnology] = useState([]); // now an array
-  const [modeOfTravel, setModeOfTravel] = useState("");
+  const [name, setName] = useState<string>("");
+  const [phone, setPhone] = useState<string>("");
+  const [technology, setTechnology] = useState([]);
+  const [modeOfTravel, setModeOfTravel] = useState<string>("");
 
-  const handleTechnologyChange = (e) => {
+  const handleTechnologyChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value, checked } = e.target;
     setTechnology((prev) =>
       checked ? [...prev, value] : prev.filter((tech) => tech !== value)
     );
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = {
       name,

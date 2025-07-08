@@ -1,5 +1,4 @@
-import { ControlledTodo } from "@/components";
-
+import { ControlledTodo } from "../../../components";
 
 const Home = () => {
   return (

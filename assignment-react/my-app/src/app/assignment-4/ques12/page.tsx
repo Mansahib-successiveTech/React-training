@@ -1,6 +1,6 @@
 "use client";
-import { DataTableMui } from "@/components";
 import React from "react";
+import { DataTableMui } from "../../../components";
 
 
 const columns = [
@@ -32,7 +32,7 @@ const Home = () => {
   return (
     <>
       <p>
-        12. Build a data table using Material-UI's Table component. Populate the
+        12. Build a data table using Material-UIs Table component. Populate the
         table with sample data and add features like sorting and pagination.
       </p>
       <div style={{ padding: "2rem" }}>

@@ -3,8 +3,8 @@ import { useState } from "react";
 import Clock from "./Clock";
 
 const ControlledUnhide = () => {
-  const [password, setPassword] = useState("");
-  const [hide, setHide] = useState(false);
+  const [password, setPassword] = useState<string>("");
+  const [hide, setHide] = useState<boolean>(false);
 
   const display = () => {
     if (password === "show please") 

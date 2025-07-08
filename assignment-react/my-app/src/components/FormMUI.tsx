@@ -1,15 +1,14 @@
 "use client";
 import * as React from "react";
-import Box from "@mui/material/Box";
 import { useState } from "react";
 import TextField from "@mui/material/TextField";
-import { Button } from "@mui/material";
+import { Box, Button } from "@mui/material";
  const FormMui = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [age, setAge] = useState("");
 
-  const handelForm = (e) => {
+  const handelForm = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const myFormData = [
       {
@@ -27,7 +26,7 @@ import { Button } from "@mui/material";
         <TextField
           label="name"
           required
-          varient="outlined"
+          variant="outlined"
           value={name}
           onChange={(e) => setName(e.target.value)}
           type="text"
@@ -36,11 +35,11 @@ import { Button } from "@mui/material";
           error={password.length < 8 && password !== ""}
           required
           label="password"
-          varient="outlined"
+          variant="outlined"
           helperText={
             password.length < 8 && password != ""
               ? "must be 8 characters"
-              : "" || password === ""
+              : password === ""
               ? "enter password"
               : ""
           }
@@ -51,7 +50,7 @@ import { Button } from "@mui/material";
         <TextField
           label="age"
           required
-          varient="outlined"
+          variant="outlined"
           value={age}
           onChange={(e) => setAge(e.target.value)}
           type="number"

@@ -1,4 +1,4 @@
-import FormWithSummary from "@/components/FormWithValidations";
+import FormWithSummary from "../../../components/FormWithValidations";
 
 const Home = () => {
   return (

@@ -1,4 +1,4 @@
-import DropdownMenu from "@/components/Dropdown";
+import DropdownMenu from "../../../components/Dropdown";
 
 const Home = () => {
   return (

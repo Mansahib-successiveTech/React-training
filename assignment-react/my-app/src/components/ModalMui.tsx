@@ -7,6 +7,7 @@ import Modal from "@mui/material/Modal";
 import { useState } from "react";
 import { TextField } from "@mui/material";
 
+
 const style = {
   position: "absolute",
   top: "50%",
@@ -19,15 +20,15 @@ const style = {
   p: 4,
 };
 const ModalMui = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const [name, setName] = useState("");
-  const [password, setPassword] = useState("");
-  const [age, setAge] = useState("");
-  const [show, setShow] = useState(false);
+  const [name, setName] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [age, setAge] = useState<string>("");
+  const [show, setShow] = useState<boolean>(false);
 
-  const handelForm = (e) => {
+  const handelForm = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const result = {
       name,
@@ -57,7 +58,7 @@ const ModalMui = () => {
               <TextField
                 label="name"
                 required
-                varient="outlined"
+                variant="outlined"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 type="text"
@@ -66,7 +67,7 @@ const ModalMui = () => {
                 error={password.length < 8 && password !== ""}
                 required
                 label="password"
-                varient="outlined"
+                variant="outlined"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 type="password"
@@ -74,7 +75,7 @@ const ModalMui = () => {
               <TextField
                 label="age"
                 required
-                varient="outlined"
+                variant="outlined"
                 value={age}
                 onChange={(e) => setAge(e.target.value)}
                 type="number"

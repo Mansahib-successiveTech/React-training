@@ -1,12 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 
 const TemperatureConverter = () => {
-  const [celsius, setCelsius] = useState("");
-  const [fahrenheit, setFahrenheit] = useState("");
+  const [celsius, setCelsius] = useState<number | string | undefined>(
+    0
+  );
+  const [fahrenheit, setFahrenheit] = useState<number | string | undefined>(
+    32
+  );
 
-  const handleCelsiusChange = (e) => {
+  const handleCelsiusChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target;
     setCelsius(value);
 
@@ -14,13 +18,13 @@ const TemperatureConverter = () => {
     setFahrenheit((num * 9) / 5 + 32);
   };
 
-  const handleFahrenheitChange = (e) => {
-    const {value} = e.target;
+  const handleFahrenheitChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const { value } = e.target;
     setFahrenheit(value);
 
     const num = parseFloat(value);
 
-    setCelsius((((num - 32) * 5) / 9));
+    setCelsius(((num - 32) * 5) / 9);
   };
 
   return (

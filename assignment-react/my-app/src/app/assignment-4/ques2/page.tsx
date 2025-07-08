@@ -1,5 +1,4 @@
-import { ControlledForm } from "@/components";
-
+import { ControlledForm } from "../../../components";
 
 const Home = () => {
   return (

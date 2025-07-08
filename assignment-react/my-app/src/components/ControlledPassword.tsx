@@ -1,11 +1,11 @@
 "use client"
-import { useState } from "react"
+import { FormEvent, useState } from "react"
 
 const ControlledPassword=()=>{
-const [password,setPassword]=useState("");
-const [rePassword,setRePassword]=useState("")
+const [password,setPassword]=useState<string>("");
+const [rePassword,setRePassword]=useState<string>("")
 
-const formhandler=(e)=>{
+const formhandler=(e:FormEvent<HTMLFormElement>)=>{
     e.preventDefault();
     console.log(password,rePassword);
 
