@@ -1,6 +1,6 @@
 "use client";
 
-import Count from "@/components/Counter";
+import Count from "../../../components/Counter";
 
 
 

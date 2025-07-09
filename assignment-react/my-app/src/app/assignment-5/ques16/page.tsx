@@ -1,4 +1,4 @@
-import { HocFetch } from "@/components";
+import { HocFetch } from "../../../components";
 
 const Home = () => {
   return (

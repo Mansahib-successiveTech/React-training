@@ -2,7 +2,13 @@
 
 import axios from "axios";
 
-export async function getUsers() {
+export interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+export async function getUsers(): Promise<{ data: User[] } | undefined> {
   try {
     const res = await fetch("https://jsonplaceholder.typicode.com/users");
 
@@ -10,15 +16,14 @@ export async function getUsers() {
       throw new Error("Failed to fetch users");
     }
 
-    const data = await res.json();
-    return { data};
-
+    const data: User[] = await res.json();
+    return { data };
   } catch (err) {
     console.error("Error fetching users");
   }
 }
 
-export async function getDogs() {
+export async function getDogs(): Promise<any[] | undefined> {
   try {
     const result = await axios.get("https://dogapi.dog/api/v2/facts?limit=5");
     return result.data.data;

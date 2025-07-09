@@ -1,19 +1,23 @@
 "use client";
 
-const { useEffect } = require("react");
+import { FC, useEffect } from "react";
 
-const withLog = (WrappedComponent) => (props) => {
-  useEffect(() => {
-    console.log("component mount");
+const withLog = <P extends object>(WrappedComponent: FC<P>): FC<P> => {
+const ComponentWithLog: FC<P> = (props) => {
+    useEffect(() => {
+      console.log("component mount");
 
-    return () => console.log("unmount");
-  }, []);
+      return () => console.log("unmount");
+    }, []);
 
-  useEffect(() => {
-    console.log("updated");
-  }, [props]);
+    useEffect(() => {
+      console.log("updated");
+    }, [props]);
 
-  return <WrappedComponent {...props} />;
+    return <WrappedComponent {...props} />;
+  };
+
+  return ComponentWithLog;
 };
- 
+
 export default withLog;

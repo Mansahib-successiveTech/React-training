@@ -1,17 +1,23 @@
 "use client";
 
 import axios from "axios";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
+
+interface resultInterface{
+  name:string;
+  title:string;
+  id:number
+}
 
 const SimplePost = () => {
   const [post, setPost] = useState("");
   const [title, setTitle] = useState("");
 
-  let result = "";
+   
 
-  const onSubmitHandler = async(e) => {
+  const onSubmitHandler = async(e:FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    result = {
+   const result :resultInterface  = {
       name: post,
       title: title,
       id:Math.floor(Math.random())*1000+1

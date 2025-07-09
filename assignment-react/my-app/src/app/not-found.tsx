@@ -6,7 +6,7 @@ const Notfound404 = () => {
       <div className="container">
         <div className="errorContainer">
           <h1 className="errorCode">404</h1>
-          <p className="errorMessage">Oops! The page you're looking for doesn't exist.</p>
+          <p className="errorMessage">Oops! The page youre looking for doesnt exist.</p>
           <Link href="/">
            Go back to Home
           </Link>

@@ -1,17 +1,25 @@
 "use client";
 
+import { FC, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { useAuth } from "../context/AuthContext";
-import { redirect } from "next/navigation";
 
-const withAuth = (WrappedComponent) => (props) => {
-  const {loggedIn}=useAuth();
-  
+const withAuth = <P extends object>(WrappedComponent: FC<P>): FC<P> => {
+  const ComponentWithAuth: FC<P> = (props) => {
+    const { loggedIn } = useAuth();
+    const router = useRouter();
 
-  if (!loggedIn) {
-    redirect("/login");
-  }
+    useEffect(() => {
+      if (!loggedIn) {
+        router.replace("/login");
+      }
+    }, [loggedIn, router]);
 
-  return <WrappedComponent {...props} />;
+
+    return <WrappedComponent {...props} />;
+  };
+
+  return ComponentWithAuth;
 };
 
 export default withAuth;

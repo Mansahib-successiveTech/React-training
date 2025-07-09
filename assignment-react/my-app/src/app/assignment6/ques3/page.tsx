@@ -1,6 +1,6 @@
 "use client";
 
-import { Login } from "@/components";
+import { Login } from "../../../components";
 
 
 

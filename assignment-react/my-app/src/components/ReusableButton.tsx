@@ -1,5 +1,16 @@
 "use client"
-const ReusableButton=(props)=>{
+
+import { ChangeEvent, MouseEventHandler } from "react";
+
+interface Props{
+    backGroundStyle:string;
+    text:string; 
+    onClickhandler:MouseEventHandler<HTMLButtonElement>
+
+
+}
+
+const ReusableButton=(props:Props)=>{
     const {onClickhandler,backGroundStyle,text}=props;
 
 return (

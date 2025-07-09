@@ -1,4 +1,4 @@
-import { Logfiles } from "@/components";
+import { Logfiles } from "../../../components";
 
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
         Apply this HOC to a component and ensure the logs appear in the browser
         console.
       </p>
-      <Logfiles />
+      <Logfiles/>
     </>
   );
 };

@@ -6,7 +6,7 @@ export default async function UsersPage() {
 
   return (
     <div>
-      <h1>Users List (SSR with fetch via actions.js)</h1>
+      <h1>Users List SSR with fetch via actions.js</h1>
 
 
       {Array.isArray(users) && users.length > 0 ? (

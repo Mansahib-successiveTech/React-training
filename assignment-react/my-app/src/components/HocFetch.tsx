@@ -1,12 +1,16 @@
 
 import withFetch from './withFetchData';
 
+interface Item{
+  id:number;
+  title:string;
+}
 function MainComponent({ data, title }) {
   return (
     <div>
       <h1>{title}</h1>
       <ul>
-        {data?.map((item) => (
+        {data?.map((item:Item) => (
           <li key={item.id}>{item.title}</li>
         ))}
       </ul>

@@ -1,4 +1,4 @@
-import Page from "@/components/ClientFetch";
+import Page from "../../../components/ClientFetch";
 
 
 const Home = () => {

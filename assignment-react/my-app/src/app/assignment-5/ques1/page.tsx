@@ -1,4 +1,4 @@
-import { SimpleFetch } from "@/components";
+import { SimpleFetch } from "../../../components";
 
 const Home = () => {
   return (

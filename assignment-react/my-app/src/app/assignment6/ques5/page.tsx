@@ -1,6 +1,6 @@
 "use client";
 
-import MuiBasicModal from "@/components/TestModal";
+import MuiBasicModal from "../../../components/TestModal";
 
 
 export default function Home() {

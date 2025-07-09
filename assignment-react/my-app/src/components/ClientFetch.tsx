@@ -1,6 +1,11 @@
 import { getUsers } from "../app/assignment-5/actions";
 
 
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
 export default async function Page() {
   const { data: users } = await getUsers();
 
@@ -10,7 +15,7 @@ export default async function Page() {
 
       {users ? (
         <ul>
-          {users.map((user) => (
+          {users.map((user:User) => (
             <li key={user.id}>
               {user.name} ({user.email})
             </li>
@@ -21,9 +26,7 @@ export default async function Page() {
       )}
 
     
-      <form action={getUsers}>
-        <button type="submit">Retry</button>
-      </form>
+     
     </div>
   );
 }

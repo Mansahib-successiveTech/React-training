@@ -1,4 +1,5 @@
-import {SimpleAxios} from "@/components";
+import { SimpleAxios } from "../../../components";
+
 const Home = () => {
   return (
     <>

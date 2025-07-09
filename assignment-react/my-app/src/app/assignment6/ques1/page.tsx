@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 
-const CounterWithStep = dynamic(() => import("@/components/CounterWithStep"), {
+const CounterWithStep = dynamic(() => import("../../../components/CounterWithStep"), {
   loading: () => <p>Loading..</p>,
 });
 

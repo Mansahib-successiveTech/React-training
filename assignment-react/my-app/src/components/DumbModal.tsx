@@ -16,7 +16,12 @@ const style = {
   p: 4,
 };
 
-export default function DumbBasicModal(props) {
+interface Props{
+  text:string;
+  heading:string;
+  backGroundStyle:string;
+}
+export default function DumbBasicModal(props : Props ) {
     const {text,heading,backGroundStyle}=props
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);

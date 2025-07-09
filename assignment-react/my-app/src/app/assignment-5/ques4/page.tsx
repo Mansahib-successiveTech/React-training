@@ -1,4 +1,4 @@
-import { DatagridFetch } from "@/components";
+import { DatagridFetch } from "../../../components";
 
 const Home = () => {
   return (
